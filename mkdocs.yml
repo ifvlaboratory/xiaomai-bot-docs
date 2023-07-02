@@ -1,8 +1,17 @@
 site_name: xiaomai-bot-docs-cn
+site_url: https://docs.ifvlab.com/projects/xiaomai/
+site_description: xiaomai-bot documention
+site_author: IFVLAB members
+
+repo_url: https://github.com/ifvlaboratory/xiaomai-bot-docs-cn/
 
 nav:
-    - Home: 'source/index.md'
-
+    - Home: 'index.md'
+    - 安装:
+    - 配置:
+    - 插件帮助:
+        - 内置插件:
+        - 运行插件:
 theme:
     name: readthedocs
     highlightjs: true
