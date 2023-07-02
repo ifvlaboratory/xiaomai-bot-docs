@@ -1,7 +1,7 @@
 site_name: xiaomai-bot-docs-cn
 
 nav:
-    - Home: 'docs/index.md'
+    - Home: 'docs/source/index.md'
 
 theme:
     name: readthedocs
