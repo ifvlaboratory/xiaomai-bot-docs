@@ -21,4 +21,4 @@ theme:
     locale: zh_CN
 
 plugins:
-  - toc-md
+  - toc-md:
