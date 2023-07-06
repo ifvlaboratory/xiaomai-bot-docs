@@ -6,12 +6,12 @@ site_author: IFVLAB members
 repo_url: https://github.com/ifvlaboratory/xiaomai-bot-docs-cn/
 
 nav:
-    - Home: 'index.md'
-#    - 安装:
-#    - 配置:
-#    - 插件帮助:
-#        - 内置插件:
-#        - 运行插件:
+    - 开始: 'index.md'
+    - 安装: 'user-guide/installation.md'
+    - 配置: 'user-guide/configuration.md'
+    - 插件帮助: 
+        - 内置插件: 'modules-help/required/index.md'
+        - 运行插件: 'modules-help/self_contained/index.md'
 
 theme:
     name: readthedocs
