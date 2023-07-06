@@ -14,8 +14,11 @@ nav:
         - 运行插件: 'modules-help/self_contained/index.md'
 
 theme:
-    name: readthedocs
+    name: material
     highlightjs: true
     analytics:
         gtag: 
     locale: zh_CN
+
+plugins:
+  - toc-md
