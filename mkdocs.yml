@@ -6,34 +6,42 @@ site_author: IFVLAB members
 repo_url: https://github.com/ifvlaboratory/xiaomai-bot-docs-cn/
 
 nav:
-  - 开始: 'index.md'
-  - 安装: 'user-guide/installation.md'
-  - 配置: 'ser-guide/configuration.md'
+  - 开始: "index.md"
+  - 安装: "user-guide/installation.md"
+  - 配置: "ser-guide/configuration.md"
   - 插件帮助:
-      - 内置插件: 'modules-help/required/index.md'
+      - 内置插件: "modules-help/required/index.md"
       - 运行插件:
-          - BF1战绩: 'modules-help/self_contained/bf1_info.md'
-          - BF1服管: 'modules-help/self_contained/bf1_servermanager.md'
+          - BF1战绩: "modules-help/self_contained/bf1_info.md"
+          - BF1服管: "modules-help/self_contained/bf1_servermanager.md"
 
 theme:
   name: material
   language: zh
   palette:
-    - primary: blue
-    - accent: blue
+    - primary: deep orange
+    - accent: deep orange
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
-      scheme: default
+      scheme: default 
+
+
       toggle:
         icon: material/brightness-7
-        name: Dark mode
+        name: Switch to dark mode
 
     # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       toggle:
         icon: material/brightness-4
-        name: Light mode
+        name: Switch to system preference
 
 extra:
   analytics:
