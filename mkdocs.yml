@@ -8,7 +8,7 @@ repo_url: https://github.com/ifvlaboratory/xiaomai-bot-docs-cn/
 nav:
   - 开始: "index.md"
   - 安装: "user-guide/installation.md"
-  - 配置: "ser-guide/configuration.md"
+  - 配置: "user-guide/configuration.md"
   - 插件帮助:
       - 内置插件: "modules-help/required/index.md"
       - 运行插件:
@@ -19,11 +19,6 @@ theme:
   name: material
   language: zh
   palette:
-    # Palette toggle for automatic mode
-    - media: "(prefers-color-scheme)"
-      toggle:
-        icon: material/brightness-auto
-        name: System preference
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -31,15 +26,15 @@ theme:
       accent: indigo
       toggle:
         icon: material/brightness-7
-        name: Light mode
+        name: Switch to dark mode
     # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
-      scheme: slate
+      scheme: black
       primary: deep orange
       accent: deep orange
       toggle:
         icon: material/brightness-4
-        name: Dark mode
+        name: Switch to light mode
 
 extra_css:
   - stylesheets/extra.css
