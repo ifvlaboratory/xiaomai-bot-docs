@@ -10,8 +10,10 @@ nav:
   - 安装: "user-guide/installation.md"
   - 配置: "user-guide/configuration.md"
   - 插件帮助:
-      - 内置插件: "modules-help/required/"
-      - 运行插件: "modules-help/self_contained/"
+      - 内置插件: 'modules-help\required\index.md'
+      - 运行插件:
+          - BF1战绩: 'modules-help\self_contained\bf1_info.md'
+          - BF1服管: 'modules-help\self_contained\bf1_servermanager.md'
 
 theme:
   name: material
@@ -32,12 +34,8 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Light mode
-  locale: zh_CN
 
 extra:
   analytics:
     provider: google
     property: G-H2FJ5C1Q3N
-
-plugins:
-  - toc-md:
