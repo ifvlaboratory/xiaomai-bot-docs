@@ -10,8 +10,8 @@ nav:
   - 安装: "user-guide/installation.md"
   - 配置: "user-guide/configuration.md"
   - 插件帮助:
-      - 内置插件: "modules-help/required/index.md"
-      - 运行插件: "modules-help/self_contained/index.md"
+      - 内置插件: "modules-help/required/"
+      - 运行插件: "modules-help/self_contained/"
 
 theme:
   name: material
