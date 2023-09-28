@@ -1,273 +1,308 @@
 # BF1服务器管理
 
-Placeholder
+Placeholder  
+參數說明: ()代表是必選的 []代表是可選的  
 
 ## 查询服务器
 
--服务器/-fwq/-FWQ/-服/-f/-狐务器/-负无穷
-查询服务器详情
+### 指令
+
+`-f -fwq -FWQ -服 -服务器 -狐务器 -负无穷`  
 
 ### 用法
 
-上述查询指令后面加上 群组名和服务器序号添加服主/管理员
--bfg 群组名 ao/aa @成员 ,ao 为添加服主，aa 为添加管理员,可同时@多个对象删除服主/管理员
--bfg 群组名 del @成员 ,可同时@多个对象
+-f \[群组名\]\[服务器序号\]  
+上述查询指令后面可以加上 群组名和服务器序号 用以查詢對應伺服器的信息  
 
 ### 示例
 
-````text
--服务器 sakula1 即可查询群组sakula群组的第一个服务器的详情，如果当前QQ群绑定了群组，则可以省略群组名
--f1
-````
+`-服务器 sakula1` 查询群组`sakula`的第一个服务器的详情  
+`-f1` 查询当前QQ群绑定的服务器详情  
 
 ## 查询服内群友
 
--谁在玩/-谁在捞 群组名(可选)服务器序号
+### 指令
+
+`-谁在玩 -谁在捞`  
+
+### 用法
+
+-谁在玩 \[群组名\]\[服务器序号\]  
 
 ### 示例
 
-```text
--谁在玩sakula1 1
--谁在捞1
-```
+`-谁在玩sakula1` 查询群组`sakula`的`1`服有哪些群友在玩  
+`-谁在捞1` 查询当前QQ群绑定的`1`服有哪些群友在玩  
 
 ## 查询玩家列表
 
+### 指令
+
+`-玩家列表 -playerlist -pl -lb`  
+
 ### 用法
 
--玩家列表/-playerlist/-pl/-lb+群组名(可选)服务器序号
+-玩家列表 \[群组名\]\[服务器序号\]  
 
 ### 示例
 
-```text
--pl sakula1
--lb1
-```
+`-pl sakula1` 查询群组`sakula`的`1`服玩家列表  
+`-lb1` 查询当前QQ群绑定的`1`服玩家列表  
 
 ## 刷新 session
 
+### 指令
+
+`-refresh`  
+
 ### 用法
 
--refresh 群组名(可选)服务器序号
+-refresh \[群组名\]\[服务器序号\]  
 
 ### 示例
 
-```text
--refresh1
--refresh 1
--refresh sakula1
-```
+`-refresh1` 刷新当前QQ群绑定的`1`服的session  
+`-refresh sakula1` 刷新群组`sakula`的`1`服的session  
 
 ## 踢出玩家
 
+### 指令
+
+`-kick -踢 -k -滚出`  
+
 ### 用法
 
--kick/-踢/-k/-滚出+可选群组名+服务器序号+空格+玩家名+可选原因
+-kick \[群组名\]\(服务器序号\) \(玩家名\) \[原因\]  
 
 ### 示例
 
-```text
--kick sakula1 shlsan13 你好 (注意这里的sakula1的sakula为群组名,1为服务器序号，中间不加任何符号，服务器序号后一定要跟空格)
--k1 shlsan13 你好
-```
+`-kick sakula1 shlsan13 你好` 在群组`sakula`的`1`服踢出玩家`shlsan13` 原因爲`你好`  
+`-k1 shlsan13` 在当前QQ群绑定的`1`服踢出玩家`shlsan13` 原因爲`違反規則`\(默認理由\)  
 
 ## 封禁玩家
 
+### 指令
+
+`-ban -封禁`  
+
 ### 用法
 
--ban/-封禁+可选群组名+服务器序号+空格+玩家名+可选原因
+-ban \[群组名\]\(服务器序号\) \(玩家名\) \[原因\]  
 
 ### 示例
 
-```text
--ban sakula1 shlsan13 你好
--ban1 shlsan13 你好
-```
+`-ban sakula1 shlsan13 你好` 在群组`sakula`的`1`服封禁玩家`shlsan13` 原因爲`你好`  
+`-ban1 shlsan13 你好` 在当前QQ群绑定的`1`服封禁玩家`shlsan13` 原因爲`你好`  
 
 ## 解封玩家
 
+### 指令
+
+`-unban -uban -解封`  
+
 ### 用法
 
--unban/-uban/-解封+可选群组名+服务器序号+空格+玩家名,解封不能加原因！
+-unban \[群组名]\(服务器序号\) \(玩家名\)  
 
 ### 示例
 
-```text
--unban sakula1 shlsan13
--unban1 shlsan13
-```
+`-unban sakula1 shlsan13` 在群组`sakula`的`1`服解封玩家`shlsan13`  
+`-unban1 shlsan13` 在当前QQ群绑定的`1`服解封玩家`shlsan13`  
 
 ## 全部封禁
 
+### 指令
+
+`-banall -ba`  
+
 ### 用法
 
--banall/-ba+空格+群组名+空格+玩家名+可选原因，全部封禁时不能加服务器序号只能(必须)写群组名
+-banall \[群组名\] \(玩家名\) \[原因\] 全部封禁时不能加服务器序号只能(必须)写群组名  
 
 ### 示例
 
-```text
--ba sakula 你好
--basakula shlsan13 你好
-```
+`-ba sakula 你好` 在群组`sakula`的所有伺服器封禁玩家`shlsan13`  原因爲`你好`  
+`-basakula shlsan13 你好` 在当前QQ群绑定的群组的所有伺服器封禁玩家`shlsan13`  原因爲`你好`  
 
 ## 全部解封
 
+### 指令
+
+`-unbanall -uba`  
+
 ### 用法
 
--unbanall/-uba+空格+玩家名+群组名，全部解封时不能加服务器序号只能(必须)写群组名
+-unbanall \[群组名\] \(玩家名\)  
 
 ### 示例
 
-```text
--uba sakula shlsan13
--ubasakula shlsan13
-```
+`-uba sakula shlsan13` 在群组`sakula`的所有伺服器解封玩家`shlsan13`  
+`-ubasakula shlsan13` 在当前QQ群绑定的群组的所有伺服器解封玩家`shlsan13`  
 
 ## 检查是否封禁玩家
 
+### 指令
+
+`-checkban`  
+
 ### 用法
 
--checkban+可选群组名+玩家名,不能写服务器序号
+-checkban \[群组名\] \(玩家名\)  
 
 ### 示例
 
-```text
--checkban sakula xiaoxiao
-```
+`-checkban sakula shlsan13` 查询群组`sakula`是否封禁了玩家`shlsan13`  
+`-checkban shlsan13` 查询当前QQ群绑定的群组是否封禁了玩家`shlsan13`  
 
 ## 清理 BAN 位
 
+### 指令
+
+`-清理ban位 -清ban`  
+
 ### 用法
 
--清理 ban 位/-清 ban+可选群组名+服务器序号+可选数量，当不指定数量时默认为 200(全部清理)
+-清ban \[群组名\]\(服务器序号\) \[数量\]  
 
 ### 示例
 
-```text
--清理ban位 sakula1 100
--清ban1
-```
+`-清理ban位 sakula1 100` 清理群组`sakula`的100個BAN位  
+`-清ban1` \(当不指定数量时默认全部清理\)  
 
 ## 换边
 
+### 指令
+
+`-move -换边 -挪`  
+
 ### 用法
 
--move/-换边/-挪+可选群组名+服务器序号+空格+玩家名+队伍 ID
+-move \群组名\] \(服务器序号\) \(玩家名\) \(队伍ID\)  
+1=進攻方 2=防守方  
 
 ### 示例
 
-```text
--move sakula1 shlsan13 1
--move1 shlsan13 2
-```
+`-move sakula1 shlsan13 1` 在群组`sakula`的`1`服將玩家`shlsan13`移動到`隊伍1`  
+`-move1 shlsan13 2` 在当前QQ群绑定的`1`服將玩家`shlsan13`移動到`隊伍2`  
 
 ## 换图
 
+### 指令
+
+`-map -换图 -切图`  
+
 ### 用法
 
--map/-换图/-切图+可选群组名+服务器序号+空格+地图名/地图序号
+-map \[群组名\] \(服务器序号\) \(地图名或序号\)  
 
 ### 示例
 
-```text
--map sakula1 要塞
--map1 重开
-```
+`-map sakula1 要塞`  
+`-map1 重开`  
 
 ## 图池换图
 
+### 指令
+
+`-图池 -maplist -地图池`  
+
 ### 用法
 
--图池/-maplist/-地图池+可选群组名+服务器序号
+-maplist \[群组名\] \(服务器序号\)  
 
 ### 示例
 
-```text
--图池 sakula1
--maplist1
-```
+`-图池 sakula1`  
+`-maplist1`  
 
 ## 加 VIP
 
+### 指令
+
+`-vip -v -加v -上v`  
+
 ### 用法
 
--vip/-v/-加 v/-上 v+可选群组名+服务器序号+空格+玩家名+可选时间(单位
-
-### 用法
-
-天，可为负数)
+-vip \[群组名\] \(服务器序号\) \(玩家名\) \[时间\]  
+时间单位爲天，可为负数，不指定則時間無限  
 
 ### 示例
 
-```text
--vip sakula1 shlsan13 3
--vip1 shlsan13 -3
-```
+`-vip sakula1 shlsan13 3`  
+`-vip1 shlsan13 -3`  
 
 ## 下 VIP
 
+### 指令
+
+`-unvip -uvip -删v -下v -减v`  
+
 ### 用法
 
--unvip/-uvip/-删 v/-下 v/-减 v+可选群组名+服务器序号+空格+玩家名,下 v 时不能写天数
+-unvip \[群组名\] \(服务器序号\) \(玩家名\)  
 
 ### 示例
 
-```text
--unvip sakula1 shlsan13
--unvip1 shlsan13
-```
+`-unvip sakula1 shlsan13`  
+`-unvip1 shlsan13`  
 
 ## 检查 VIP
 
+### 指令
+
+`-checkvip`  
+
 ### 用法
 
--checkvip+可选群组名+服务器序号
+-checkvip \[群组名\] \(服务器序号\)  
+行动服用于自动将缓存VIP生效 删除,并重开当前地图(非首图不重开但提示重开)，征服会清理VIP  
 
 ### 示例
 
-```text
--checkvip sakula1
--checkvip1 (行动服用于自动将缓存VIP生效/删除,并重开当前地图(非首图不重开但提示重开)，征服会清理VIP)
-```
+`-checkvip sakula1`  
+`-checkvip1`  
 
 ## VIP 列表
 
+### 指令
+
+`-viplist -vip 列表 -vl`  
+
 ### 用法
 
--viplist/-vip 列表/-vl+可选群组名+服务器序号
+-viplist \[群组名\] \(服务器序号\)  
 
 ### 示例
 
-```text
--vlsakula1
--vl1
--vl sakula1
-```
+`-vl1`  
+`-vl sakula1`  
 
 ## BAN 列表
 
+### 指令
+
+`-banlist -ban 列表 -bl -封禁列表 -封禁list`  
+
 ### 用法
 
--banlist/-ban 列表/-bl/-封禁列表/-封禁 list+可选群组名+服务器序号
+-banlist \[群组名\] \(服务器序号\)  
 
 ### 示例
 
-```text
--bl sakula1
--bl1
--bl sakula1
-```
+`-bl sakula1`  
+`-bl1`  
 
 ## ADMIN 列表
 
+### 指令
+
+`-adminlist -管理列表 -al`  
+
 ### 用法
 
--adminlist/-管理列表/-al+可选群组名+服务器序号
+-adminlist \[群组名\] \(服务器序号\)  
 
 ### 示例
 
-```text
--al sakula1
--al1
--al sakula1
-```
+`-al sakula1`  
+`-al1`  
