@@ -1,7 +1,7 @@
 # BF1服务器管理
 
 Placeholder  
-參數說明: ()代表是必選的 []代表是可選的  
+参数说明: ()代表是必选的 []代表是可选的  
 
 ## 查询服务器
 
@@ -12,7 +12,7 @@ Placeholder
 ### 用法
 
 -f \[群组名\]\[服务器序号\]  
-上述查询指令后面可以加上 群组名和服务器序号 用以查詢對應伺服器的信息  
+上述查询指令后面可以加上 群组名和服务器序号 用以查询对应伺服器的信息  
 
 ### 示例
 
@@ -76,8 +76,8 @@ Placeholder
 
 ### 示例
 
-`-kick sakula1 shlsan13 你好` 在群组`sakula`的`1`服踢出玩家`shlsan13` 原因爲`你好`  
-`-k1 shlsan13` 在当前QQ群绑定的`1`服踢出玩家`shlsan13` 原因爲`違反規則`\(默認理由\)  
+`-kick sakula1 shlsan13 你好` 在群组`sakula`的`1`服踢出玩家`shlsan13` 原因为`你好`  
+`-k1 shlsan13` 在当前QQ群绑定的`1`服踢出玩家`shlsan13` 原因为`违反规则`\(默认理由\)  
 
 ## 封禁玩家
 
@@ -91,8 +91,8 @@ Placeholder
 
 ### 示例
 
-`-ban sakula1 shlsan13 你好` 在群组`sakula`的`1`服封禁玩家`shlsan13` 原因爲`你好`  
-`-ban1 shlsan13 你好` 在当前QQ群绑定的`1`服封禁玩家`shlsan13` 原因爲`你好`  
+`-ban sakula1 shlsan13 你好` 在群组`sakula`的`1`服封禁玩家`shlsan13` 原因为`你好`  
+`-ban1 shlsan13 你好` 在当前QQ群绑定的`1`服封禁玩家`shlsan13` 原因为`你好`  
 
 ## 解封玩家
 
@@ -121,8 +121,8 @@ Placeholder
 
 ### 示例
 
-`-ba sakula 你好` 在群组`sakula`的所有伺服器封禁玩家`shlsan13`  原因爲`你好`  
-`-basakula shlsan13 你好` 在当前QQ群绑定的群组的所有伺服器封禁玩家`shlsan13`  原因爲`你好`  
+`-ba sakula 你好` 在群组`sakula`的所有伺服器封禁玩家`shlsan13`  原因为`你好`  
+`-basakula shlsan13 你好` 在当前QQ群绑定的群组的所有伺服器封禁玩家`shlsan13`  原因为`你好`  
 
 ## 全部解封
 
@@ -166,7 +166,7 @@ Placeholder
 
 ### 示例
 
-`-清理ban位 sakula1 100` 清理群组`sakula`的100個BAN位  
+`-清理ban位 sakula1 100` 清理群组`sakula`的100个BAN位  
 `-清ban1` \(当不指定数量时默认全部清理\)  
 
 ## 换边
@@ -177,13 +177,13 @@ Placeholder
 
 ### 用法
 
--move \群组名\] \(服务器序号\) \(玩家名\) \(队伍ID\)  
-1=進攻方 2=防守方  
+-move \[群组名\] \(服务器序号\) \(玩家名\) \(队伍ID\)  
+1=进攻方 2=防守方  
 
 ### 示例
 
-`-move sakula1 shlsan13 1` 在群组`sakula`的`1`服將玩家`shlsan13`移動到`隊伍1`  
-`-move1 shlsan13 2` 在当前QQ群绑定的`1`服將玩家`shlsan13`移動到`隊伍2`  
+`-move sakula1 shlsan13 1` 在群组`sakula`的`1`服将玩家`shlsan13`移动到`队伍1`  
+`-move1 shlsan13 2` 在当前QQ群绑定的`1`服将玩家`shlsan13`移动到`队伍2`  
 
 ## 换图
 
@@ -197,8 +197,8 @@ Placeholder
 
 ### 示例
 
-`-map sakula1 要塞`  
-`-map1 重开`  
+`-map sakula1 要塞` 在群组`sakula`的`1`服将地图更换为`要塞`  
+`-map1 重开` 在当前QQ群绑定的`1`服重开地图  
 
 ## 图池换图
 
@@ -212,8 +212,8 @@ Placeholder
 
 ### 示例
 
-`-图池 sakula1`  
-`-maplist1`  
+`-图池 sakula1` 显示群组`sakula`的`1`服的地图池  
+`-maplist1` 显示当前QQ群绑定的`1`服的地图池  
 
 ## 加 VIP
 
@@ -224,12 +224,12 @@ Placeholder
 ### 用法
 
 -vip \[群组名\] \(服务器序号\) \(玩家名\) \[时间\]  
-时间单位爲天，可为负数，不指定則時間無限  
+时间单位为天，可为负数，不指定则时间无限  
 
 ### 示例
 
-`-vip sakula1 shlsan13 3`  
-`-vip1 shlsan13 -3`  
+`-vip sakula1 shlsan13 3` 在群组`sakula`的`1`服为玩家`shlsan13`添加`3`天的VIP  
+`-vip1 shlsan13 -3` 在当前QQ群绑定的`1`服为玩家`shlsan13`减少`3`天的VIP  
 
 ## 下 VIP
 
@@ -243,8 +243,8 @@ Placeholder
 
 ### 示例
 
-`-unvip sakula1 shlsan13`  
-`-unvip1 shlsan13`  
+`-unvip sakula1 shlsan13` 在群组`sakula`的`1`服删除玩家`shlsan13`的VIP  
+`-unvip1 shlsan13` 在当前QQ群绑定的`1`服删除玩家`shlsan13`的VIP  
 
 ## 检查 VIP
 
@@ -255,12 +255,13 @@ Placeholder
 ### 用法
 
 -checkvip \[群组名\] \(服务器序号\)  
-行动服用于自动将缓存VIP生效 删除,并重开当前地图(非首图不重开但提示重开)，征服会清理VIP  
+在行动服使用该指令会自动将缓存VIP生效，也就是删除过期的VIP,添加缓存的VIP，并重开当前地图(非首图不重开但提示重开)  
+征服的VIP会立刻生效，所以该指令仅会清理过期的VIP  
 
 ### 示例
 
-`-checkvip sakula1`  
-`-checkvip1`  
+`-checkvip sakula1` 在群组`sakula`的`1`服检查VIP  
+`-checkvip1` 在当前QQ群绑定的`1`服检查VIP  
 
 ## VIP 列表
 
@@ -274,8 +275,8 @@ Placeholder
 
 ### 示例
 
-`-vl1`  
-`-vl sakula1`  
+`-vl sakula1` 显示群组`sakula`的`1`服的VIP列表  
+`-vl1` 显示当前QQ群绑定的`1`服的VIP列表  
 
 ## BAN 列表
 
@@ -289,8 +290,8 @@ Placeholder
 
 ### 示例
 
-`-bl sakula1`  
-`-bl1`  
+`-bl sakula1` 显示群组`sakula`的`1`服的封禁列表  
+`-bl1` 显示当前QQ群绑定的`1`服的封禁列表  
 
 ## ADMIN 列表
 
@@ -304,5 +305,5 @@ Placeholder
 
 ### 示例
 
-`-al sakula1`  
-`-al1`  
+`-al sakula1` 显示群组`sakula`的`1`服的管理列表  
+`-al1` 显示当前QQ群绑定的`1`服的管理列表  

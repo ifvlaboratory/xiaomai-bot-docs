@@ -40,3 +40,10 @@ extra:
   analytics:
     provider: google
     property: G-H2FJ5C1Q3N
+
+markdown_extensions:  
+  - toc:       
+    toc_depth: '2'
+
+plugins:
+  - optimize
