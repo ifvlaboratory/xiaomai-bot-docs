@@ -43,7 +43,4 @@ extra:
 
 markdown_extensions:  
   - toc:       
-    toc_depth: '2'
-
-plugins:
-  - optimize
+      toc_depth: '2'
