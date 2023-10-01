@@ -1,8 +1,8 @@
-# BF1群組管理
+# BF1群组管理
 
 Placeholder
 
-## 增改查刪
+## 增改查删
 
 -bfg 新建(new)/删除(del)/信息(info) 群组名
 如: -bfg info sakula  

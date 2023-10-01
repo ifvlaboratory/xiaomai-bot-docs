@@ -14,6 +14,7 @@ nav:
       - 运行插件:
           - BF1战绩: "modules-help/self_contained/bf1_info.md"
           - BF1服管: "modules-help/self_contained/bf1_servermanager.md"
+          - BF1群组管理: "modules-help/self_contained/bf1_groupmanager.md"
 
 theme:
   name: material
@@ -30,7 +31,7 @@ theme:
     # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: indigo
+      primary: black
       accent: indigo
       toggle:
         icon: material/brightness-4
