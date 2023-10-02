@@ -10,6 +10,8 @@ Placeholder
 -bfg 改名(rename) 群组名 new_name
 如: -bfg rename sakula sakula2  
 
+-bf群組列表 / -bfgl
+
 ## 绑定解绑
 
 -bfg 群组名 绑服#(bind#)服务器序号 服务器gameid
