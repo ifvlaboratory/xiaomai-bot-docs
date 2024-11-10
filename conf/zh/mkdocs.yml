@@ -1,0 +1,60 @@
+site_name: '帮助文档'
+site_url: 'https://docs.ifvlab.com/projects/xiaomai/'
+repo_url: 'https://github.com/ifvlaboratory/xiaomai-bot-docs-cn/'
+repo_name: 'GitHub'
+site_description: '小埋bot帮助文档'
+site_author: '13'
+
+docs_dir: '../../docs/zh'
+site_dir: '../../site/zh'
+
+theme:
+  name: 'material'
+  custom_dir: '../../overrides'
+  language: 'zh'
+  palette:
+    # Palette toggle for light mode
+    - media: '(prefers-color-scheme: light)'
+      scheme: 'default'
+      primary: 'deep orange'
+      accent: 'deep orange'
+      toggle:
+        icon: 'material/brightness-7'
+        name: '切换深色模式'
+    # Palette toggle for dark mode
+    - media: '(prefers-color-scheme: dark)'
+      scheme: 'slate'
+      primary: 'black'
+      accent: 'indigo'
+      toggle:
+        icon: 'material/brightness-4'
+        name: '切换浅色模式'
+
+nav:
+  - 开始: 'index.md'
+  - 安装: 'user-guide/installation.md'
+  - 配置: 'user-guide/configuration.md'
+  - 插件帮助:
+      - 内置插件: 'modules-help/required/index.md'
+      - 运行插件:
+          - BF1战绩: 'modules-help/self_contained/bf1_info.md'
+          - BF1服管: 'modules-help/self_contained/bf1_servermanager.md'
+          - BF1群组管理: 'modules-help/self_contained/bf1_groupmanager.md'
+
+extra:
+  alternate:
+    - name: "English"
+      link: "/en/"
+    - name: "簡體中文"
+      link: "/zh/"
+      lang: "zh"
+    - name: "繁體中文"
+      link: "/zh-TW/"
+      lang: "zh-TW"
+  analytics:
+    provider: 'google'
+    property: 'G-H2FJ5C1Q3N'
+
+markdown_extensions:  
+  - toc:       
+      toc_depth: '2'

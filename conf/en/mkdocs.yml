@@ -1,0 +1,61 @@
+site_name: 'Documentation'
+site_url: 'https://docs.ifvlab.com/projects/xiaomai/'
+repo_url: 'https://github.com/ifvlaboratory/xiaomai-bot-docs-cn/'
+repo_name: 'GitHub'
+site_description: 'xiaomai-bot Documentation'
+site_author: '13'
+
+docs_dir: '../../docs/en'
+site_dir: '../../site/en'
+
+theme:
+  name: 'material'
+  custom_dir: '../../overrides'
+  language: 'en'
+  palette:
+    # Palette toggle for light mode
+    - media: '(prefers-color-scheme: light)'
+      scheme: 'default'
+      primary: 'deep orange'
+      accent: 'deep orange'
+      toggle:
+        icon: 'material/brightness-7'
+        name: 'Switch to dark mode'
+    # Palette toggle for dark mode
+    - media: '(prefers-color-scheme: dark)'
+      scheme: 'slate'
+      primary: 'black'
+      accent: 'indigo'
+      toggle:
+        icon: 'material/brightness-4'
+        name: 'Switch to light mode'
+
+nav:
+  - Start: 'index.md'
+  - Installation: 'user-guide/installation.md'
+  - Configuration: 'user-guide/configuration.md'
+  - Modules help:
+      - Required: 'modules-help/required/index.md'
+      - Self contained:
+          - BF1 Stats: 'modules-help/self_contained/bf1_info.md'
+          - BF1 Server manager: 'modules-help/self_contained/bf1_servermanager.md'
+          - BF1 Group manager: 'modules-help/self_contained/bf1_groupmanager.md'
+
+extra:
+  alternate:
+    - name: "English"
+      link: "/en/"
+    - name: "簡體中文"
+      link: "/zh/"
+      lang: "zh"
+    - name: "繁體中文"
+      link: "/zh-TW/"
+      lang: "zh-TW"
+  analytics:
+    provider: 'google'
+    property: 'G-H2FJ5C1Q3N'
+
+markdown_extensions:  
+  - toc:       
+      toc_depth: '2'
+
