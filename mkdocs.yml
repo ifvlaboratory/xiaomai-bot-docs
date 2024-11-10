@@ -41,15 +41,6 @@ theme:
         name: '亮色模式'
 
 extra:
-  alternate:
-    - name: 'English'
-      link: '/en/'
-    - name: '簡體中文'
-      link: '/zh/'
-      lang: 'zh'
-    - name: '繁體中文'
-      link: '/zh-TW/'
-      lang: 'zh-TW'
   analytics:
     provider: 'google'
     property: 'G-H2FJ5C1Q3N'
