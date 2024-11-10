@@ -1,55 +1,58 @@
-site_name: "xiaomai-bot-docs-cn"
-site_url: "https://docs.ifvlab.com/projects/xiaomai/"
-site_description: "xiaomai-bot Documentation"
-site_author: "13"
+site_name: 'xiaomai-bot-docs-cn'
+repo_url: 'https://github.com/ifvlaboratory/xiaomai-bot-docs-cn/'
+repo_name: 'Github'
+site_url: 'https://docs.ifvlab.com/projects/xiaomai/'
+site_description: 'xiaomai-bot Documentation'
+site_author: '13'
 
-repo_url: "https://github.com/ifvlaboratory/xiaomai-bot-docs-cn/"
+docs_dir: "docs"
+site_dir: "site"
 
 nav:
-  - 开始: "index.md"
-  - 安装: "user-guide/installation.md"
-  - 配置: "user-guide/configuration.md"
+  - 开始: 'index.md'
+  - 安装: 'user-guide/installation.md'
+  - 配置: 'user-guide/configuration.md'
   - 插件帮助:
-      - 内置插件: "modules-help/required/index.md"
+      - 内置插件: 'modules-help/required/index.md'
       - 运行插件:
-          - BF1战绩: "modules-help/self_contained/bf1_info.md"
-          - BF1服管: "modules-help/self_contained/bf1_servermanager.md"
-          - BF1群组管理: "modules-help/self_contained/bf1_groupmanager.md"
+          - BF1战绩: 'modules-help/self_contained/bf1_info.md'
+          - BF1服管: 'modules-help/self_contained/bf1_servermanager.md'
+          - BF1群组管理: 'modules-help/self_contained/bf1_groupmanager.md'
 
 theme:
-  name: "material"
-  language: "zh"
+  name: 'material'
+  language: 'zh'
   palette:
     # Palette toggle for light mode
-    - media: "(prefers-color-scheme: light)"
-      scheme: "default"
-      primary: "deep orange"
-      accent: "deep orange"
+    - media: '(prefers-color-scheme: light)'
+      scheme: 'default'
+      primary: 'deep orange'
+      accent: 'deep orange'
       toggle:
-        icon: "material/brightness-7"
-        name: "Switch to dark mode"
+        icon: 'material/brightness-7'
+        name: '暗色模式'
     # Palette toggle for dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: "slate"
-      primary: "black"
-      accent: "indigo"
+    - media: '(prefers-color-scheme: dark)'
+      scheme: 'slate'
+      primary: 'black'
+      accent: 'indigo'
       toggle:
-        icon: "material/brightness-4"
-        name: "Switch to light mode"
+        icon: 'material/brightness-4'
+        name: '亮色模式'
 
 extra:
   alternate:
-    - name: "English"
-      link: "/en/"
-    - name: "簡體中文"
-      link: "/zh/"
-      lang: "zh"
-    - name: "繁體中文"
-      link: "/zh-TW/"
-      lang: "zh-TW"
+    - name: 'English'
+      link: '/en/'
+    - name: '簡體中文'
+      link: '/zh/'
+      lang: 'zh'
+    - name: '繁體中文'
+      link: '/zh-TW/'
+      lang: 'zh-TW'
   analytics:
-    provider: "google"
-    property: "G-H2FJ5C1Q3N"
+    provider: 'google'
+    property: 'G-H2FJ5C1Q3N'
 
 markdown_extensions:  
   - toc:       
