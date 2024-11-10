@@ -1,9 +1,9 @@
-site_name: xiaomai-bot-docs-cn
-site_url: https://docs.ifvlab.com/projects/xiaomai/
-site_description: xiaomai-bot documention
-site_author: IFVLAB members
+site_name: "xiaomai-bot-docs-cn"
+site_url: "https://docs.ifvlab.com/projects/xiaomai/"
+site_description: "xiaomai-bot Documentation"
+site_author: "13"
 
-repo_url: https://github.com/ifvlaboratory/xiaomai-bot-docs-cn/
+repo_url: "https://github.com/ifvlaboratory/xiaomai-bot-docs-cn/"
 
 nav:
   - 开始: "index.md"
@@ -17,30 +17,39 @@ nav:
           - BF1群组管理: "modules-help/self_contained/bf1_groupmanager.md"
 
 theme:
-  name: material
-  language: zh
+  name: "material"
+  language: "zh"
   palette:
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: deep orange
-      accent: deep orange
+      scheme: "default"
+      primary: "deep orange"
+      accent: "deep orange"
       toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
+        icon: "material/brightness-7"
+        name: "Switch to dark mode"
     # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: black
-      accent: indigo
+      scheme: "slate"
+      primary: "black"
+      accent: "indigo"
       toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
+        icon: "material/brightness-4"
+        name: "Switch to light mode"
 
 extra:
+  alternate:
+    - name: "English"
+      link: "/en/"
+    - name: "簡體中文"
+      link: "/zh/"
+      lang: "zh"
+    - name: "繁體中文"
+      link: "/zh-TW/"
+      lang: "zh-TW"
   analytics:
-    provider: google
-    property: G-H2FJ5C1Q3N
+    provider: "google"
+    property: "G-H2FJ5C1Q3N"
 
 markdown_extensions:  
   - toc:       
